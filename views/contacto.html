@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../imagenes/ps_logo-08.ico">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Pet shop</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+         <a hhref="../index.html"></a>
+          <img src="../imagenes/logo-06-06-08.png" alt="logo"> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page"  href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="alimento.html">Alimento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="cuchas.html">Cuchas</a>
+             <li class="nav-item">
+                <a class="nav-link" href="indumentaria.html">Indumentaria</a>
+             <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+          </div>
+        </div>
+   </nav>
+    <header id="info_contact">
+        <h1>Contactanos</h1>
+        <p id="nro_publico">
+            Atencion al publico:
+            0810-220-2345
+        </p>
+        <p id="nro_whp">
+            Atencion whatsapp
+            +54-911-6702-6320
+        </p>
+        <p id="horarios">
+            Lunes a Viernes de 9 a 21 hs
+            Sabados 9 a 14 hs
+        </p>
+    </header>
+    <div>
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+  </div>
+    <main id="padre-contacto">
+        <section >
+            <form action="envio.php" id="gran-contenedor">
+             <div id="cuadros">
+               <h2 >Dejanos tu mensaje</h2>
+               <div>
+                <label for="" id="name">Nombre</label>
+                <input type="text" id="nombre">
+               </div>
+               <br>
+               <div>
+                <label for="" id="adress">Apellido</label>
+                <input type="text" id="apellido">
+               </div>
+               <br>
+               <div>
+                <label for="email" id="correo">Email</label>
+                <input type="email" id="email">
+               </div>
+               <br>
+               <div>
+                <label for="numbers" id="tel">Telefono</label>
+                <input type="numbers" id="telefono">
+               </div>
+               <br>
+               <div>
+                <label for="mensaje" id="mesage">Deja tu consulta</label>
+                <br>
+                <textarea name=""  cols="30" rows="10"></textarea>
+               </div>
+               <br>
+               <div>
+                <input type="reset" value="cancelar">
+                <input type="submit" value="enviar">
+               </div>
+             </div>
+             <div id="cuadros-seg">
+                <h2 id="ubication">Ubicacion</h2>
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.054813370963!2d-68.83847879999999!3d-32.896719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091684f5471b%3A0xe79a868dc5157553!2sSan%20Juan%20594%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1654127132208!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="mapa"></iframe>
+             </div>
+            </form>
+        </section>
+    </main>
+    <footer id="pie">
+        <h3>seguinos en las redes</h3>
+        <a href="https://m.facebook.com/login/?locale=es_ES">
+            <img src="../imagenes/f_logo-06.png" alt="facebook_logo">
+        </a>
+        <a href="https://www.instagram.com">
+            <img src="../imagenes/i_logo-06.png" alt="instagram_logo">
+        </a>
+        <img src="../imagenes/logos-06.png" alt="logos">
+        <p>
+            Patitas y ocicos ©. 2022. Todos los derechos reservados
+        </p>
+
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

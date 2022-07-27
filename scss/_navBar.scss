@@ -1,0 +1,93 @@
+#navbarSupportedContent {
+    background-color: $mainColor;
+    font-family: $mainFont;
+    font-size: $textLg;
+    width: 100%;
+    padding-left: 200px;
+    align-items: flex-end;
+    margin-right: 100px;
+    ul li{
+        display: flex;
+        align-items: flex-end;
+    }
+}
+ 
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 200px ;
+    height: 500px;
+    grid-template-areas: 
+    "texto_m i_bf"
+    "texto_v i_bf";
+    column-gap: 100px;
+    row-gap: 30px;
+
+    #first_div{
+        grid-area: texto_m;
+    }
+
+    #second_div {
+        grid-area: texto_v;
+       
+    }
+    
+    #imagen-bf {
+        margin: auto;
+        width: 100%;
+        grid-area: i_bf;   
+       
+    }
+    #titulo-m {
+        font-family: $secondaryFont;
+        font-size: $textXl;
+        @include texto(2em, 2.4em,)
+        
+    }
+    
+    #parrafo-m {
+        font-family: $mainFont;
+        font-size: $textMd;
+        justify-content: center;
+        text-align: center; 
+        padding: 10px 10px;
+        margin: 10px 10px;
+    } 
+
+    #titulo-v {
+        font-family:$secondaryFont;
+        font-size: $textXl;
+        @include texto(2em, 2.4em,)
+   
+    
+    }
+
+    #parrafo-v {
+        font-family:  $mainFont;
+        font-size: $textMd;
+        justify-content: center; 
+        text-align: center;
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+}
+
+.div-novedades{
+        background-color:$mainColor;
+    
+    
+    .titulo-novedades {
+           font-family: $secondaryFont;
+           font-size: $textXl;
+           color: $secondaryColor;
+           text-align: center; 
+           padding: 20px 10px;
+           margin: 10px 10px;
+           margin-bottom: 20px;
+           width: 90%;
+    
+    }
+
+}
+
+

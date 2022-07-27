@@ -1,0 +1,45 @@
+.btn-primary{
+    width: 100px;
+    height: 30px;
+    background-color: map-get ($map:$paleta, $key:'uno' );
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+
+}
+
+// extend
+.btn-secondary{
+    @extend .btn-primary;
+    border-radius: 4px;
+}
+
+// mixins
+@mixin texto ($font-size, $line-height, $color) {
+    font-family: $fontMain;
+    font-size: $size;
+    line-height: $interlineado;
+    color: $color;
+    padding: 4px;
+}
+
+.titulo-m {
+    @include texto(2em, 2.4em)
+}
+
+.titulo-v{
+    @include texto(2em, 2.4em )
+
+}
+
+
+// maps
+$paleta:(
+    'uno': #f1b6f1, 
+    'dos': #e640f1,
+    'tres': #b25dd4,
+)
+
+    
