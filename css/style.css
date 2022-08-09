@@ -1,36 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-.btn-more, .btn-rounded {
-  width: 100px;
-  height: 30px;
-  background: linear-gradient(to top, violet, deepink);
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black; }
-
-.btn-rounded {
-  border-radius: 4px; }
-
-#navbarSupportedContent {
+.container-fluid {
   background-color: #fdfcdc;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
-  width: 100%;
-  padding-left: 200px;
-  align-items: flex-end;
-  margin-right: 100px; }
-  #navbarSupportedContent ul li {
+  height: 80px; }
+  .container-fluid .img-logo {
+    padding-top: 50px;
     display: flex;
-    align-items: flex-end; }
+    align-items: flex-start; }
+  .container-fluid #navbarSupportedContent {
+    background-color: #fdfcdc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    width: 50%;
+    padding-left: 200px;
+    margin-right: 50px; }
+    .container-fluid #navbarSupportedContent ul li {
+      display: flex;
+      align-items: flex-end; }
+
+#carouselExampleControls {
+  padding-top: 50px;
+  position: static; }
 
 .content {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 250px 200px;
   height: 500px;
-  grid-template-areas: "texto_m i_bf"
- "texto_v i_bf";
+  grid-template-areas: "texto_m i_bf" "texto_v i_bf";
   column-gap: 100px;
   row-gap: 30px; }
   .content #first_div {
@@ -44,11 +40,8 @@
   .content #titulo-m {
     font-family: "Roboto", sans-serif;
     font-size: 35px;
-    color: #00afb9;
     text-align: center;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    width: 90%; }
+    color: #00afb9; }
   .content #parrafo-m {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -59,12 +52,8 @@
   .content #titulo-v {
     font-family: "Roboto", sans-serif;
     font-size: 35px;
-    color: #00afb9;
     text-align: center;
-    padding-top: 20px;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    width: 90%; }
+    color: #00afb9; }
   .content #parrafo-v {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -76,7 +65,7 @@
 .div-novedades {
   background-color: #fdfcdc; }
   .div-novedades .titulo-novedades {
-    font-family: "Roboto", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 35px;
     color: #00afb9;
     text-align: center;
@@ -88,11 +77,10 @@
 #pie {
   width: 100%;
   background-color: #f07167;
-  margin: 5px 10px;
-  padding: 1px 10px;
   align-items: center;
   color: #fdfcdc;
-  grid-area: pie-b; }
+  height: 100px;
+  padding-left: 20px; }
   #pie #l_f {
     display: inline;
     justify-content: space-between;

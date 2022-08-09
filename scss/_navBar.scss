@@ -1,15 +1,30 @@
-#navbarSupportedContent {
+.container-fluid {
+    background-color: $mainColor;
+    height: $heightMd;
+
+    .img-logo {
+        padding-top: $paddLg;
+        display: flex;
+        align-items: flex-start;
+     }
+     
+    #navbarSupportedContent {
     background-color: $mainColor;
     font-family: $mainFont;
     font-size: $textLg;
-    width: 100%;
+    width: 50%;
     padding-left: 200px;
-    align-items: flex-end;
-    margin-right: 100px;
+    margin-right: 50px;
     ul li{
         display: flex;
         align-items: flex-end;
     }
+    }
+}
+
+#carouselExampleControls{
+    padding-top:$paddLg ;
+    position: static;
 }
  
 .content {
@@ -41,7 +56,9 @@
     #titulo-m {
         font-family: $secondaryFont;
         font-size: $textXl;
-        @include texto(2em, 2.4em,)
+        text-align: center;
+        color: $secondaryColor;
+
         
     }
     
@@ -57,7 +74,8 @@
     #titulo-v {
         font-family:$secondaryFont;
         font-size: $textXl;
-        @include texto(2em, 2.4em,)
+        text-align: center;
+        color: $secondaryColor;
    
     
     }
@@ -77,7 +95,7 @@
     
     
     .titulo-novedades {
-           font-family: $secondaryFont;
+           font-family: $mainFont;
            font-size: $textXl;
            color: $secondaryColor;
            text-align: center; 

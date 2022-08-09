@@ -1,31 +1,27 @@
 #pie {
     width: 100%;
     background-color:$thirdColor;
-    margin: 5px 10px;
-    padding: 1px 10px;
     align-items: center;
     color: $mainColor;
-    grid-area: pie-b;
+    height: $heightLg;
+    padding-left: $paddMd;
 
     #l_f {
         display: inline;
         justify-content: space-between;
         margin-left: 10px;
-     
        }
     
     #l_i{
         display: inline;
         justify-content: space-between;
         margin-left: 10px;
-     
        } 
      
     #l_l{
         display: inline;
         justify-content: space-between;
        margin-left: 10px;
-     
        } 
      
     #pie p {
