@@ -220,39 +220,128 @@
     margin: 10px 2px;
     padding: 0px 2px; }
   #padre-cuchas .img_a {
-    width: 60%;
-    padding-top: 20px;
-    grid-area: cucha-a;
-    display: inline-flex; }
-  #padre-cuchas .img_b {
-    width: 60%;
-    padding-top: 20px;
-    grid-area: cucha-b;
-    display: inline-flex; }
-  #padre-cuchas .img_c {
-    width: 60%;
-    padding-top: 20px;
-    grid-area: cucha-c;
-    display: inline-flex; }
-  #padre-cuchas #ph_a {
     width: 50%;
     text-align: center;
-    padding: 20px 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+    display: inline-flex;
+    grid-area: cucha-a; }
+  #padre-cuchas .img_b {
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+    display: inline-flex;
+    grid-area: cucha-b; }
+  #padre-cuchas .img_c {
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 50px;
+    display: inline-flex;
+    grid-area: cucha-c; }
+  #padre-cuchas #ph_a {
+    width: 50%;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
     grid-area: text-a;
     display: inline; }
   #padre-cuchas #ph_b {
     width: 50%;
+    padding: 20px;
+    width: 50%;
     text-align: center;
-    padding: 20px 80px;
     grid-area: text-b;
     display: inline-flex; }
   #padre-cuchas #ph_c {
     width: 50%;
+    padding: 20px;
+    width: 50%;
     text-align: center;
-    margin: 10px 20px;
-    padding: 20px 80px;
     grid-area: text-c;
     display: inline-flex; }
+
+#info_contact {
+  background-color: #f07167;
+  margin: 100px 0px;
+  padding: 5px 10px;
+  height: 30%;
+  justify-content: center; }
+  #info_contact h1 {
+    color: #fdfcdc;
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    padding: 0px 20px;
+    margin: 5px 5px; }
+  #info_contact #nro_publico {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 15%;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 30px;
+    display: inline-flex;
+    color: #fdfcdc; }
+  #info_contact #nro_whp {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 15%;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 80px;
+    display: inline-flex;
+    color: #fdfcdc; }
+  #info_contact #horarios {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 22%;
+    text-align: center;
+    margin: 10px 10px;
+    padding: 10px 80px;
+    display: inline-flex;
+    color: #fdfcdc; }
+
+#gran-contenedor {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px;
+  grid-template-areas: "pri-cuadro seg-cuadro"; }
+  #gran-contenedor #cuadros {
+    position: absolute;
+    grid-area: pri-cuadro;
+    width: 100%;
+    padding: 10px 15px;
+    align-content: center; }
+    #gran-contenedor #cuadros h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #00afb9;
+      font-size: 30px;
+      margin: 5px 20px;
+      padding: 5px 20px;
+      align-content: center; }
+
+#cuadros-seg {
+  grid-area: seg-cuadro;
+  align-content: flex-end; }
+  #cuadros-seg h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #00afb9;
+    font-size: 30px;
+    margin: 5px 20px;
+    padding-left: 200px;
+    align-content: center; }
+    #cuadros-seg h2 iframe {
+      margin: 5px 20px;
+      width: 100%;
+      align-content: center;
+      padding-left: 200px; }
 
 #pie {
   width: 100%;

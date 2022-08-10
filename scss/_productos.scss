@@ -198,34 +198,50 @@
       }
       
         .img_a {
-          width: 60%;
-          padding-top: 20px;
-          grid-area: cucha-a;
-          display: inline-flex;
+            width: $widthMd;
+            text-align: center;
+            margin-top: $marginMd ;
+            margin-left: $marginLg ;
+            padding-top: $paddSm ;
+            padding-left: $paddLg ;
+            display: inline-flex; 
+            grid-area: cucha-a;
+      
       
          }
       
         .img_b {
-          width: 60%;
-          padding-top: 20px;
-          grid-area: cucha-b;
-          display: inline-flex;
+         width: $widthMd;
+         text-align: center;
+         margin-top: $marginMd ;
+         margin-left: $marginLg ;
+         padding-top: $paddSm ;
+         padding-left: $paddLg ;
+         display: inline-flex; 
+         grid-area: cucha-b;
+         
       
          }
       
         .img_c {
-          width: 60%;
-          padding-top: 20px;
-          grid-area: cucha-c;
-          display: inline-flex;
+         width: $widthMd;
+         text-align: center;
+         margin-top: $marginMd ;
+         margin-left: $marginLg ;
+         padding-top: $paddSm ;
+         padding-left: $paddLg ;
+         display: inline-flex; 
+         grid-area: cucha-c;
+          
           
          }
         
         
         #ph_a {
-          width: 50%;
+          width: $widthMd;
+          padding: $paddMd;
+          width: $widthMd;
           text-align: center;
-          padding: 20px 20px;
           grid-area: text-a;
           display: inline; 
           
@@ -234,24 +250,133 @@
          }
       
         #ph_b {
-          width: 50%;
-          text-align: center; 
-          padding: 20px 80px;
+          width: $widthMd;
+          padding: $paddMd;
+          width: $widthMd;
+          text-align: center;
           grid-area: text-b;
           display: inline-flex;
       
         }
       
         #ph_c { 
-          width: 50%;
-          text-align: center;
-          margin: 10px 20px;
-          padding: 20px 80px;
-          grid-area: text-c;
-          display: inline-flex;
+         width: $widthMd;
+         padding: $paddMd;
+         width: $widthMd;
+         text-align: center;
+         grid-area: text-c;
+         display: inline-flex;
       
          }
   }
+
+#info_contact {
+     
+    background-color: rgb(240, 113, 103);
+    margin: 100px 0px;
+    padding: 5px 10px;
+    height:30% ;
+    justify-content: center;
+
+    h1 {
+        color: rgb(253, 252, 220);
+        font-family: 'Roboto', sans-serif;
+        font-size: 35px;
+        padding: 0px 20px;
+        margin: 5px 5px;
+    }
+    #nro_publico {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        width: 15%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 10px 30px;
+        display: inline-flex;
+        color: rgb(253, 252, 220)
+    
+    }
+    #nro_whp {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        width: 15%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 10px 80px;
+        display: inline-flex;
+        color: rgb(253, 252, 220)
+        
+    }
+    #horarios{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        width: 22%;
+        text-align: center;
+        margin: 10px 10px;
+        padding: 10px 80px;
+        display: inline-flex;
+        color: rgb(253, 252, 220)
+    
+    }
+}
+
+
+#gran-contenedor{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 200px ;
+  grid-template-areas: 
+  "pri-cuadro seg-cuadro";
+
+  #cuadros{
+    position: absolute;
+    grid-area: pri-cuadro;
+    width: 100%;
+    padding: 10px 15px;
+    align-content: center;
+
+    h2 { 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(0, 175, 185);
+        font-size: 30px;
+        margin: 5px 20px;
+        padding: 5px 20px;
+        align-content: center; 
+    
+    }
+  }
+  
+
+}
+
+#cuadros-seg{
+  grid-area: seg-cuadro;
+  align-content: flex-end;
+  
+  h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 175, 185);
+    font-size: 30px;
+    margin: 5px 20px;
+    padding-left: 200px;
+    align-content: center;
+
+  iframe {
+    margin: 5px 20px;
+        width: 100%;
+        align-content: center;
+        padding-left: 200px;
+    
+     }
+ 
+ }
+
+}
+
+
+
+
+
   
   
 
