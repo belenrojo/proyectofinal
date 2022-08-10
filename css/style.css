@@ -74,6 +74,58 @@
     margin-bottom: 20px;
     width: 90%; }
 
+#gato-comida {
+  padding-top: 50px;
+  padding-left: 100px;
+  width: 80%;
+  align-items: center;
+  grid-area: gato-c;
+  width: 100%; }
+
+#contenido {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 300px;
+  height: 500px;
+  grid-template-areas: "gato-c gato-c" "primero segundo"; }
+  #contenido #first {
+    grid-area: primero;
+    display: inline-block;
+    justify-content: space-between; }
+    #contenido #first .select-h {
+      font-family: "Roboto", sans-serif;
+      font-size: 35px;
+      text-align: center;
+      color: #00afb9; }
+      #contenido #first .select-h p {
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+        font-size: 16px;
+        width: 80%;
+        margin: 10px;
+        padding: 20px; }
+  #contenido #second {
+    grid-area: segundo;
+    display: inline-block;
+    justify-content: space-between; }
+    #contenido #second .titulo-marcas {
+      font-family: "Roboto", sans-serif;
+      font-size: 35px;
+      text-align: center;
+      color: #00afb9;
+      width: 80%;
+      margin-left: 20px;
+      margin-top: 40px;
+      padding-left: 5px;
+      padding-top: 20px; }
+    #contenido #second #tabla {
+      background-color: #fdfcdc;
+      margin-left: 20px;
+      margin-top: 40px;
+      padding-left: 5px;
+      padding-top: 20px;
+      align-items: center; }
+
 #pie {
   width: 100%;
   background-color: #f07167;

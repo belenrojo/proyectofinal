@@ -1,0 +1,78 @@
+#gato-comida{
+    padding-top: $paddLg ;
+    padding-left: $paddXl;
+    width: $widthLg;
+    align-items: center;
+    grid-area: gato-c;
+    width: 100%;
+  
+}
+
+#contenido {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 300px;
+    height: 500px;
+    grid-template-areas: 
+    "gato-c gato-c"
+    "primero segundo";
+
+    #first{
+        grid-area: primero;
+        display: inline-block;
+        justify-content: space-between;
+
+        .select-h {
+            font-family: $secondaryFont;
+            font-size: $textXl;
+            text-align: center;
+            color: $secondaryColor;
+            p {
+            font-family: $secondaryFont;
+            text-align: center;
+            font-size: 16px;
+            width: $widthLg;
+            margin: $marginMd ;
+            padding: $paddMd ;
+            }
+        }
+
+       }
+    
+    #second{
+        grid-area: segundo;
+        display: inline-block;
+        justify-content: space-between;
+
+     .titulo-marcas {
+        font-family: $secondaryFont;
+        font-size: $textXl;
+        text-align: center;
+        color: $secondaryColor;
+        width:$widthLg;
+        margin-left: $marginLg;
+        margin-top: $marginXl;
+        padding-left:$paddSm ;
+        padding-top: $paddMd ;    
+        }
+
+     #tabla {
+        background-color:$mainColor;
+        margin-left:$marginLg ;
+        margin-top:$marginXl ;
+        padding-left:$paddSm ;
+        padding-top:$paddMd ;
+        align-items: center; 
+        }
+       }
+
+    
+  }
+  
+  
+
+
+  
+
+  
+  
