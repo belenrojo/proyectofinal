@@ -81,10 +81,12 @@
     font-size:$textXl;
     height: $heightSm;
     padding-left: $paddMd;
+    
   
   }
   
 .sector {
+    padding-top: $paddMd;
     display: grid;
     grid-template-columns: repeat(3 1fr) ;
     grid-template-rows: 300px 300px ;
@@ -107,8 +109,8 @@
     margin-top:$marginLg ;
     margin-left:$marginXl ;
     padding-top: $paddSm;
-    padding-left: $paddMd;
-    width: $widthMd;
+    padding-left: $paddSm;
+    width: $widthLg;
     grid-area: mod-bb;
 
   }
@@ -177,7 +179,7 @@
     #item-cuchas {
         display: grid;
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 200px 10px;
+        grid-template-rows: 200px 30px;
         grid-template-areas: 
         "cucha-a cucha-b cucha-c"
         "text-a tex-b text-c";
@@ -198,39 +200,35 @@
       }
       
         .img_a {
-            width: $widthMd;
+            width: $widthLg;
             text-align: center;
             margin-top: $marginMd ;
             margin-left: $marginLg ;
             padding-top: $paddSm ;
             padding-left: $paddLg ;
-            display: inline-flex; 
+            display: inline; 
             grid-area: cucha-a;
       
       
          }
       
         .img_b {
-         width: $widthMd;
+         width: $widthLg;
          text-align: center;
-         margin-top: $marginMd ;
          margin-left: $marginLg ;
-         padding-top: $paddSm ;
          padding-left: $paddLg ;
-         display: inline-flex; 
+         display: inline; 
          grid-area: cucha-b;
          
       
          }
       
         .img_c {
-         width: $widthMd;
+         width: $widthLg;
          text-align: center;
-         margin-top: $marginMd ;
          margin-left: $marginLg ;
-         padding-top: $paddSm ;
          padding-left: $paddLg ;
-         display: inline-flex; 
+         display: inline; 
          grid-area: cucha-c;
           
           
@@ -238,34 +236,25 @@
         
         
         #ph_a {
-          width: $widthMd;
-          padding: $paddMd;
+          padding: $paddSm;
           width: $widthMd;
           text-align: center;
           grid-area: text-a;
           display: inline; 
-          
-      
       
          }
       
-        #ph_b {
-          width: $widthMd;
-          padding: $paddMd;
-          width: $widthMd;
+        #ph_b {       
           text-align: center;
           grid-area: text-b;
-          display: inline-flex;
+          display: inline;
       
         }
       
-        #ph_c { 
-         width: $widthMd;
-         padding: $paddMd;
-         width: $widthMd;
+        #ph_c {     
          text-align: center;
          grid-area: text-c;
-         display: inline-flex;
+         display: inline;
       
          }
   }
@@ -329,11 +318,12 @@
   "pri-cuadro seg-cuadro";
 
   #cuadros{
-    position: absolute;
+    position: static;
+    align-content: center;
     grid-area: pri-cuadro;
     width: 100%;
     padding: 10px 15px;
-    align-content: center;
+    
 
     h2 { 
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -345,33 +335,34 @@
     
     }
   }
-  
-
-}
-
-#cuadros-seg{
-  grid-area: seg-cuadro;
-  align-content: flex-end;
-  
-  h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(0, 175, 185);
-    font-size: 30px;
-    margin: 5px 20px;
-    padding-left: 200px;
-    align-content: center;
-
-  iframe {
-    margin: 5px 20px;
-        width: 100%;
-        align-content: center;
-        padding-left: 200px;
+  #cuadros-seg{
+    grid-area: seg-cuadro;
+    align-content: flex-end;
     
-     }
- 
- }
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgb(0, 175, 185);
+      font-size: 30px;
+      margin: 5px 20px;
+      padding-left: 200px;
+      align-content: center;
+  
+    iframe {
+      margin: 5px 20px;
+      width: 100%;
+      align-content: center;
+      padding: 200px;
+      
+       }
+   
+   }
+  
+  }
+  
 
 }
+
+
 
 
 

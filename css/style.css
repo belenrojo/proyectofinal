@@ -139,6 +139,7 @@
   padding-left: 20px; }
 
 .sector {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: repeat(3 1fr);
   grid-template-rows: 300px 300px;
@@ -156,8 +157,8 @@
     margin-top: 20px;
     margin-left: 50px;
     padding-top: 5px;
-    padding-left: 20px;
-    width: 50%;
+    padding-left: 5px;
+    width: 80%;
     grid-area: mod-bb; }
   .sector #modelo_c {
     display: inline;
@@ -208,7 +209,7 @@
   #padre-cuchas #item-cuchas {
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 200px 10px;
+    grid-template-rows: 200px 30px;
     grid-template-areas: "cucha-a cucha-b cucha-c" "text-a tex-b text-c";
     justify-items: center; }
   #padre-cuchas .model_titulo {
@@ -220,53 +221,42 @@
     margin: 10px 2px;
     padding: 0px 2px; }
   #padre-cuchas .img_a {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin-top: 10px;
     margin-left: 20px;
     padding-top: 5px;
     padding-left: 50px;
-    display: inline-flex;
+    display: inline;
     grid-area: cucha-a; }
   #padre-cuchas .img_b {
-    width: 50%;
+    width: 80%;
     text-align: center;
-    margin-top: 10px;
     margin-left: 20px;
-    padding-top: 5px;
     padding-left: 50px;
-    display: inline-flex;
+    display: inline;
     grid-area: cucha-b; }
   #padre-cuchas .img_c {
-    width: 50%;
+    width: 80%;
     text-align: center;
-    margin-top: 10px;
     margin-left: 20px;
-    padding-top: 5px;
     padding-left: 50px;
-    display: inline-flex;
+    display: inline;
     grid-area: cucha-c; }
   #padre-cuchas #ph_a {
-    width: 50%;
-    padding: 20px;
+    padding: 5px;
     width: 50%;
     text-align: center;
     grid-area: text-a;
     display: inline; }
   #padre-cuchas #ph_b {
-    width: 50%;
-    padding: 20px;
-    width: 50%;
     text-align: center;
     grid-area: text-b;
-    display: inline-flex; }
+    display: inline; }
   #padre-cuchas #ph_c {
-    width: 50%;
-    padding: 20px;
-    width: 50%;
     text-align: center;
     grid-area: text-c;
-    display: inline-flex; }
+    display: inline; }
 
 #info_contact {
   background-color: #f07167;
@@ -314,11 +304,11 @@
   grid-template-rows: 200px;
   grid-template-areas: "pri-cuadro seg-cuadro"; }
   #gran-contenedor #cuadros {
-    position: absolute;
+    position: static;
+    align-content: center;
     grid-area: pri-cuadro;
     width: 100%;
-    padding: 10px 15px;
-    align-content: center; }
+    padding: 10px 15px; }
     #gran-contenedor #cuadros h2 {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       color: #00afb9;
@@ -326,27 +316,25 @@
       margin: 5px 20px;
       padding: 5px 20px;
       align-content: center; }
-
-#cuadros-seg {
-  grid-area: seg-cuadro;
-  align-content: flex-end; }
-  #cuadros-seg h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #00afb9;
-    font-size: 30px;
-    margin: 5px 20px;
-    padding-left: 200px;
-    align-content: center; }
-    #cuadros-seg h2 iframe {
+  #gran-contenedor #cuadros-seg {
+    grid-area: seg-cuadro;
+    align-content: flex-end; }
+    #gran-contenedor #cuadros-seg h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #00afb9;
+      font-size: 30px;
       margin: 5px 20px;
-      width: 100%;
-      align-content: center;
-      padding-left: 200px; }
+      padding-left: 200px;
+      align-content: center; }
+      #gran-contenedor #cuadros-seg h2 iframe {
+        margin: 5px 20px;
+        width: 100%;
+        align-content: center;
+        padding: 200px; }
 
 #pie {
   width: 100%;
   background-color: #f07167;
-  align-items: center;
   color: #fdfcdc;
   height: 100px;
   padding-left: 20px; }
