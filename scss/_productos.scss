@@ -167,14 +167,14 @@
 .img-perro{
     display: inline;
     justify-items: center;
-    width: 100%;
+    width: $widthLg;
   }
   
 #padre-cuchas{
     display: grid;
     justify-content: center;
-    width: 80%;
-    height: 70%;
+    width: $widthXl;
+   
 
     #item-cuchas {
         display: grid;
@@ -189,13 +189,12 @@
       }
       
       .model_titulo {
-          color: rgb(0, 175, 185);
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-size: 25px;
+          color: $secondaryColor;
+          font-family: $mainFont;
+          font-size: $textXl;
           flex-direction: row;
-          height: 30px;
-          margin: 10px 2px;
-          padding: 0px 2px;
+          height: $heightSm;
+          margin: $marginMd;
           
       }
       
@@ -261,50 +260,49 @@
 
 #info_contact {
      
-    background-color: rgb(240, 113, 103);
-    margin: 100px 0px;
-    padding: 5px 10px;
-    height:30% ;
+    background-color: $thirdColor;
+    margin-top: $margiXXl;
+    padding: $paddSm;
     justify-content: center;
 
     h1 {
-        color: rgb(253, 252, 220);
-        font-family: 'Roboto', sans-serif;
-        font-size: 35px;
-        padding: 0px 20px;
-        margin: 5px 5px;
+        color:$mainColor;
+        font-family: $secondaryFont;
+        font-size: $textXl;
+        padding-top: $paddMd ;
+        margin: $marginSm;
     }
     #nro_publico {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
-        width: 15%;
+        font-family: $mainFont;
+        font-size: $textMd;
         text-align: center;
-        margin: 10px 10px;
-        padding: 10px 30px;
+        margin: $marginMd;
+        padding: $paddMd;
         display: inline-flex;
-        color: rgb(253, 252, 220)
+        color: $mainColor;
     
     }
     #nro_whp {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
-        width: 15%;
+        font-family: $mainFont;
+        font-size: $textLg;
         text-align: center;
-        margin: 10px 10px;
-        padding: 10px 80px;
+        margin: $marginMd;
+        padding-top: $paddMd ;
+        padding-left: $paddLg;
         display: inline-flex;
-        color: rgb(253, 252, 220)
+        color: $mainColor;
         
     }
     #horarios{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 18px;
-        width: 22%;
+        font-family: $mainFont;
+        font-size: $textLg;
+        width: $widthSm;
         text-align: center;
-        margin: 10px 10px;
-        padding: 10px 80px;
+        margin: $marginMd;
+        padding-left: $paddLg;
+        padding-top: $paddMd;
         display: inline-flex;
-        color: rgb(253, 252, 220)
+        color: $mainColor;
     
     }
 }
@@ -321,14 +319,13 @@
     position: static;
     align-content: center;
     grid-area: pri-cuadro;
-    width: 100%;
     padding: 10px 15px;
     
 
     h2 { 
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgb(0, 175, 185);
-        font-size: 30px;
+        font-family: $mainFont;
+        color: $secondaryColor;
+        font-size: $textXl;
         margin: 5px 20px;
         padding: 5px 20px;
         align-content: center; 
@@ -340,18 +337,17 @@
     align-content: flex-end;
     
     h2 {
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-      color: rgb(0, 175, 185);
-      font-size: 30px;
+      font-family: $mainFont;
+      color: $secondaryColor;
+      font-size: $textXl;
       margin: 5px 20px;
       padding-left: 200px;
       align-content: center;
   
     iframe {
       margin: 5px 20px;
-      width: 100%;
       align-content: center;
-      padding: 200px;
+      position: absolute;
       
        }
    
